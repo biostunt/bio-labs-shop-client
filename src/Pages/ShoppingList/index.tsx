@@ -1,0 +1,1 @@
+export { default as ShoppingRoutes } from './Routes';
