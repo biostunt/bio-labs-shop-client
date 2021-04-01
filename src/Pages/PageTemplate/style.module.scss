@@ -1,0 +1,21 @@
+@import '../../variables.scss'; 
+
+.page-container {
+    width: 100%;
+    height: 100%;
+}
+
+.header-container {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 10vh;
+}
+
+.body-container {
+    @extend .body-text;
+    margin-top: 8rem;
+    position: relative;
+    padding: 0 $side-offset;
+    padding-top: 1rem;
+}

@@ -1,5 +1,5 @@
 {
-  "name": "bio-labs-shop",
+  "name": "bio-labs-shop-client",
   "version": "0.1.0",
   "private": true,
   "dependencies": {

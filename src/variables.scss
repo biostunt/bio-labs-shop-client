@@ -1,0 +1,19 @@
+$side-offset: 8vh;
+
+.header-text {
+    font-family: Roboto,
+    Helvetica,
+    Arial,
+    sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.2rem;
+    line-height: 2rem;
+    color: white;
+    text-decoration: none;
+}
+
+.body-text {
+    @extend .header-text;
+    color: black;
+}

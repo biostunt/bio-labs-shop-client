@@ -1,17 +1,12 @@
 import Style from './style.module.scss';
-import Logo from './Logo';
-import Menu from './Menu';
-import User from './User';
-
+import Top from './Top';
+import Bottom from './Bottom';
 
 const Header = () => {
-    return <div className={Style.header}>
-        <Logo />
-        <Menu />
-        <User />
-    </div>
+    return <div className={Style['header']}>
+            <Top />
+            <Bottom/>
+        </div>
 }
-
-
 
 export default Header;

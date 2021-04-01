@@ -2,6 +2,7 @@ import { IStoreAction } from "../Interfaces";
 
 const initialState = {
     cart: [],
+    history: [],
     role: 'user'
 };
 
