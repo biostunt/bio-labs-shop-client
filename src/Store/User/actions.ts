@@ -1,10 +1,16 @@
+import { IProductItem } from '../../Interfaces/ProductItem.interface';
+import { IUser } from '../../Interfaces/User.interface';
 import { IStoreAction } from '../Interfaces';
 import TYPE from './types';
 
-type TUserRoles = 'user' | 'administrator';
 
-const actionChangeUserRole = (role: TUserRoles) : IStoreAction => ({ type: TYPE.CHANGE_USER_ROLE, payload: role });
+
+const actionChangeUserData = (user: IUser): IStoreAction => ({ type: TYPE.ON_CHANGE_USER_DATA, payload: user });
+const actionChangeUserHistory = (items: Array<IProductItem>): IStoreAction => ({ type: TYPE.ON_CHANGE_USER_HISTORY, payload: items });
+const actionChangeUserCart = (items: Array<IProductItem>): IStoreAction => ({ type: TYPE.ON_CHANGE_USER_CART, payload: items });
 
 export const UserActions = {
-    changeUserRole: actionChangeUserRole
+    changeUserData: actionChangeUserData,
+    changeUserHistory: actionChangeUserHistory,
+    changeUserCart: actionChangeUserCart
 }

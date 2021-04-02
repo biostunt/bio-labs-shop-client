@@ -1,8 +1,8 @@
-import { ISliderItem } from "../../../../Store/WelcomePage/Interfaces";
+import { INewsItem } from "../../../../Interfaces/News.interface";
 import Style from './style.module.scss';
 import { Link } from 'react-router-dom';
 
-interface Props extends ISliderItem {}
+interface Props extends INewsItem {}
 
 const Element = (props : Props) => {
     const { id, page_url, photo_url, title, description } = props;

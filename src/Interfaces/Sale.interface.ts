@@ -1,11 +1,4 @@
 
-export interface ISliderItem {
-    id: number;
-    photo_url: string;
-    page_url: string;
-    title: string;
-    description?: string;
-}
 
 export interface ISaleItem {
     id: number;

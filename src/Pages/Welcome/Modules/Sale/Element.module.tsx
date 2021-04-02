@@ -1,4 +1,4 @@
-import { ISaleItem } from '../../../../Store/WelcomePage/Interfaces';
+import { ISaleItem } from '../../../../Interfaces/Sale.interface';
 import Style from './style.module.scss';
 
 

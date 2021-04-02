@@ -1,11 +1,15 @@
 import { IStoreAction } from '../Interfaces';
 import TYPE from './types';
-import {ISliderItem} from './Interfaces'
+import { INewsItem } from '../../Interfaces/News.interface';
+import { ISaleItem } from '../../Interfaces/Sale.interface';
 
 
-const actionSliderItemsChanged = (items: Array<ISliderItem>) => ({ type: TYPE.ON_SLIDER_ITEMS_CHANGED, payload: items });
+const actionNewsItemsChanged = (items: Array<INewsItem>): IStoreAction => ({ type: TYPE.ON_NEWS_ITEMS_CHANGED, payload: items });
+
+const actionSaleItemsChanged = (items: Array<ISaleItem>): IStoreAction => ({type: TYPE.ON_SALE_ITEMS_CHANGED, payload: items})
 
 
 export const WelcomePageActions = {
-    updateSliderItem: actionSliderItemsChanged
+    updateNewsItems: actionNewsItemsChanged,
+    updateSaleItems: actionSaleItemsChanged
 }
