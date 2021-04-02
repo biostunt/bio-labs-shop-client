@@ -1,5 +1,5 @@
 import Style from '../style.module.scss';
-import { Button, Icon } from 'semantic-ui-react';
+import { Icon } from 'semantic-ui-react';
 
 const User = () => {
     return (

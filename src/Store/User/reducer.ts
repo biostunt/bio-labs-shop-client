@@ -1,12 +1,19 @@
+import { IProductItem } from "../../Interfaces/ProductItem.interface";
+import { IUser } from "../../Interfaces/User.interface";
 import { IStoreAction } from "../Interfaces";
 import TYPE from './types';
 
-const initialState = {
-    userData: {},
-    cart: [],
-    history: [],
-};
+const userData: IUser = {
+    role: 'ADMINISTRATOR'
+}
+const cart: Array<IProductItem> = [];
+const history: Array<IProductItem> = [];
 
+const initialState = {
+    userData,
+    cart,
+    history
+};
 export type TUserState = typeof initialState;
 
 

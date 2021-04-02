@@ -1,10 +1,11 @@
 import Style from './style.module.scss';
 import Logo from './concept.png';
-import { Button, Icon } from 'semantic-ui-react';
+import { Icon } from 'semantic-ui-react';
 import Catalogue from './Modules/Catalogue';
 import Search from './Modules/Search';
 import User from './Modules/User';
 import Cart from './Modules/Cart';
+import ControlPanel from './Modules/ControlPanel';
 
 
 const Bottom = () => {
@@ -15,6 +16,7 @@ const Bottom = () => {
             </div>
             <Catalogue/>
             <Search />
+            <ControlPanel/>
             <div className={Style['header-bottom-line-link']}>
                 <Icon size='small' name='diamond'/>
                 Bonuses

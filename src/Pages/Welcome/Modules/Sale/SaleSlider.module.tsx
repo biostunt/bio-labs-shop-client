@@ -2,7 +2,7 @@ import { useSelector } from "react-redux";
 import { IStoreState } from "../../../../Store";
 import { Slider } from "../../../../Components";
 import SliderElement from './Element.module';
-import Style from './style.module.scss';
+
 
 
 const Sale = () => {

@@ -1,4 +1,4 @@
-import { Link, Route, RouteComponentProps, Router, useParams } from 'react-router-dom';
+import { Link, RouteComponentProps, Router } from 'react-router-dom';
 
 const shoppingItems = new Array(100).fill(1).map((e, i) => ({ id: i, name: `Item-${i}`, url:`/${i}` }));
 

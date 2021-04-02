@@ -41,7 +41,7 @@ const Slider = (props: SliderProps) => {
 
     useEffect(() => {
         setContentChanger((prev) => updateTimeout(prev));
-        return () => clearTimeout(contentChanger);
+        return () => deleteTimeout(contentChanger);
     }, [activeKey]);
 
     return (
