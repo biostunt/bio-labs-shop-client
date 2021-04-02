@@ -27,7 +27,12 @@ const Slider = (props: SliderProps) => {
     const {key, width, height, delay, items } = props;
 
     const createTimeout = () => setTimeout(() =>  onRight(), delay? delay: 3000);
-    
+    const deleteTimeout = (instance: NodeJS.Timeout) => clearTimeout(instance);
+    const updateTimeout = (instance: NodeJS.Timeout) => {
+        deleteTimeout(instance);
+        return createTimeout();
+    }
+
     const [contentChanger, setContentChanger] = useState(createTimeout());
     const [activeKey, setActiveKey] = useState(0);
 
@@ -35,8 +40,7 @@ const Slider = (props: SliderProps) => {
     const onRight = () => setActiveKey(activeKey + 1 > items.length - 1 ? 0 : activeKey + 1);
 
     useEffect(() => {
-        clearTimeout(contentChanger);
-        setContentChanger(createTimeout());
+        setContentChanger((prev) => updateTimeout(prev));
         return () => clearTimeout(contentChanger);
     }, [activeKey]);
 
