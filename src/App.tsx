@@ -1,12 +1,12 @@
 import 'semantic-ui-css/semantic.min.css'
 import { AboutRoutes } from './Pages/About';
-import { ShoppingRoutes } from './Pages/ShoppingList'
 import { WelcomeRoutes } from './Pages/Welcome'
 import { ErrorRoutes } from './Pages/Error';
+import {ProductListRoutes} from './Pages/ProductList'
 import PageTemplate from './Pages/PageTemplate';
 
 const l = <>
-    <ShoppingRoutes />
+    <ProductListRoutes />
     <AboutRoutes />
     <ErrorRoutes/>
     <WelcomeRoutes />
